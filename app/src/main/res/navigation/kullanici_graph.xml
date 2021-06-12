@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/kullanici_graph"
+    app:startDestination="@id/kullaniciListFragment">
+
+    <fragment
+        android:id="@+id/kullaniciListFragment"
+        android:name="com.example.odev.view.KullaniciListFragment"
+        android:label="fragment_kullanici_list"
+        tools:layout="@layout/fragment_kullanici_list" >
+        <action
+            android:id="@+id/action_kullaniciListFragment_to_kullaniciDetayFragment"
+            app:destination="@id/kullaniciDetayFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/kullaniciDetayFragment"
+        android:name="com.example.odev.view.KullaniciDetayFragment"
+        android:label="fragment_kullanici_detay"
+        tools:layout="@layout/fragment_kullanici_detay" >
+        <action
+            android:id="@+id/action_kullaniciDetayFragment_to_kullaniciListFragment"
+            app:destination="@id/kullaniciListFragment" />
+        <argument
+            android:name="kullanici_id"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+</navigation>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.KullaniciDetayFragment">
+
+    <ImageView
+        android:id="@+id/kullaniciGorsel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:minHeight="200dp"
+        android:scaleType="fitCenter"
+        android:layout_margin="8dp"
+        app:srcCompat="@drawable/ic_launcher_background">
+    </ImageView>
+    <TextView
+        android:id="@+id/kul_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kullaniciGorsel"
+        android:text="Kullanici ID"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        > </TextView>
+    <TextView
+        android:id="@+id/kullaniciIsim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kul_id"
+        android:text="Kullanici İsmi"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        > </TextView>
+
+    <TextView
+        android:id="@+id/kullaniciMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kullaniciIsim"
+        android:text="Kullanici Mail"
+        android:textSize="15sp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        > </TextView>
+
+
+</RelativeLayout>
+</layout>

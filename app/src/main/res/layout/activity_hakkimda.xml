@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.HakkimdaActivity">
+
+    <ImageView
+        android:id="@+id/resim"
+        android:layout_width="wrap_content"
+        android:layout_height="299dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:minHeight="200dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/ben"> </ImageView>
+    <TextView
+        android:id="@+id/ad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/resim"
+        android:text="Ali Fırat Öztekin"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        > </TextView>
+    <TextView
+        android:id="@+id/no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ad"
+        android:text="Öğrenci No: 191030021"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        > </TextView>
+
+    <TextView
+        android:id="@+id/genel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/no"
+        android:text="Şuanda daha çok web siteleri ile ilgili çalışmalarım mevcut. Yayında bulunan 3 sitem var ama ileride mobil uygulamalar ve VR uygulamaları
+yapmak istiyorum. Piyasayı ve işi iyice öğrendikten sonra bir şirket kurup kendi markamı kendi uygulamalarımı geliştirmek istiyorum ve bu yüzden bir an önce staj yapıp kendime tecrübe edinmek istiyorum ve piyasanın işleyişini öğrenmek istiyorum. "
+        android:textSize="15sp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        > </TextView>
+
+
+
+</RelativeLayout>
